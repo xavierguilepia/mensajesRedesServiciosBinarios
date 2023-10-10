@@ -1,0 +1,7 @@
+C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\GitClient\bin\Debug\GitClient.exe.config
+C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\GitClient\bin\Debug\GitClient.exe
+C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\GitClient\bin\Debug\GitClient.pdb
+C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\GitClient\obj\Debug\GitClient.csproj.AssemblyReference.cache
+C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\GitClient\obj\Debug\GitClient.csproj.CoreCompileInputs.cache
+C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\GitClient\obj\Debug\GitClient.exe
+C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\GitClient\obj\Debug\GitClient.pdb
