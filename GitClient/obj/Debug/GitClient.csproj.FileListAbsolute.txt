@@ -5,3 +5,9 @@ C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\
 C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\GitClient\obj\Debug\GitClient.csproj.CoreCompileInputs.cache
 C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\GitClient\obj\Debug\GitClient.exe
 C:\Users\usuari\Desktop\Xarxes\23-10-10ActivitatServidor\mensajesRedesServicios\GitClient\obj\Debug\GitClient.pdb
+D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\GitClient\bin\Debug\GitClient.exe.config
+D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\GitClient\bin\Debug\GitClient.exe
+D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\GitClient\bin\Debug\GitClient.pdb
+D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\GitClient\obj\Debug\GitClient.csproj.CoreCompileInputs.cache
+D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\GitClient\obj\Debug\GitClient.exe
+D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\GitClient\obj\Debug\GitClient.pdb
