@@ -25,6 +25,7 @@ namespace ConsoleApp1
                 {
                     string escritura2 = Console.ReadLine();
                     sw.WriteLine(escritura2);
+                    sw.Flush();
                     Console.WriteLine("Daniel: " + escritura2);
 
 
