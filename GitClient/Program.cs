@@ -33,12 +33,10 @@ namespace GitClient
                 {
 
                     string Escrit = sr.ReadLine();
-
                     Console.WriteLine("Recibido: " + Escrit);
 
-                    Escrit = Console.ReadLine();
-
-                    sw.WriteLine(Escrit);
+                    string Escrit2 = Console.ReadLine();
+                    sw.WriteLine(Escrit2 + "\n");
 
                 }
                 catch (Exception e)
