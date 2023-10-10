@@ -23,11 +23,12 @@ namespace ConsoleApp1
             {
                 try
                 {
-                    string escritura = Console.ReadLine();
-                    sw.WriteLine(escritura);
-                    Console.WriteLine("Daniel: " + escritura);
+                    string escritura2 = Console.ReadLine();
+                    sw.WriteLine(escritura2);
+                    Console.WriteLine("Daniel: " + escritura2);
 
-                    escritura = sr.ReadLine();
+
+                    string escritura = sr.ReadLine();
                     Console.WriteLine("Xavi: " + escritura);
                 }
                 catch(Exception e)

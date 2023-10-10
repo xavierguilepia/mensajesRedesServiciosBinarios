@@ -18,11 +18,11 @@ namespace GitClient
 
             client2.Connect("127.0.0.1", 49149);
 
-            NetworkStream Stream = client2.GetStream();
+            NetworkStream stream = client2.GetStream();
 
-            StreamReader sr = new StreamReader(Stream);
+            StreamReader sr = new StreamReader(stream);
 
-            StreamWriter sw = new StreamWriter(Stream);
+            StreamWriter sw = new StreamWriter(stream);
 
             bool end = false;
 
@@ -36,7 +36,7 @@ namespace GitClient
                     Console.WriteLine("Recibido: " + Escrit);
 
                     string Escrit2 = Console.ReadLine();
-                    sw.WriteLine(Escrit2 + "\n");
+                    sw.WriteLine(Escrit2);
 
                 }
                 catch (Exception e)
