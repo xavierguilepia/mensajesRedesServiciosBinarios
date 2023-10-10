@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net;
+using System.Net.Sockets;
+using System.IO;
 
 namespace ConsoleApp1
 {
@@ -10,6 +9,34 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            TcpListener listener = new TcpListener(49149);
+            listener.Start();
+            TcpClient client1 = listener.AcceptTcpClient();
+            NetworkStream ns1 = client1.GetStream();
+
+            StreamReader sr = new StreamReader(ns1);
+            StreamWriter sw = new StreamWriter(ns1);
+
+            bool end = false;
+ 
+            while (end == false)
+            {
+                try
+                {
+                    string escritura = Console.ReadLine();
+                    sw.WriteLine(escritura);
+                    Console.WriteLine("Daniel: " + escritura);
+
+                    escritura = sr.ReadLine();
+                    Console.WriteLine("Xavi: " + escritura);
+                }
+                catch(Exception e)
+                {
+                    end = true;
+                }
+            }
+
+            listener.Stop();
         }
     }
 }
