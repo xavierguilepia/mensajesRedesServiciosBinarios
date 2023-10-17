@@ -16,39 +16,46 @@ namespace ConsoleApp1
 
             BinaryReader sr = new BinaryReader(ns1);
             BinaryWriter sw = new BinaryWriter(ns1);
-
+            bool repet = false;
             bool end = false;
  
             while (end == false)
             {
                 try
                 {
-                    string escritura2 = Console.ReadLine();
-                    switch (escritura2)
+                    do
                     {
-                        case "int":
-                            byte size = 4;
-                            sw.Write(size);
-                            int msg = 2147483647;
-                            sw.Write(msg);
-                            break;
+                        repet = false;
+                        string escritura2 = Console.ReadLine();
+                        switch (escritura2)
+                        {
+                            case "int":
+                                byte size = 4;
+                                sw.Write(size);
+                                int msg = 2147483647;
+                                sw.Write(msg);
+                                break;
 
-                        case "byte":
-                            size = 1;
-                            sw.Write(size);
-                            byte msgbb = 255;
-                            sw.Write(msgbb);
-                            break;
-                        case "short":
-                            size = 2;
-                            sw.Write(size);
-                            short msgss = 33;
-                            sw.Write(msgss);
-                            break;
-                        default:
-                            Console.WriteLine("eureueruer error de escritura");
-                            break;
-                    }
+                            case "byte":
+                                size = 1;
+                                sw.Write(size);
+                                byte msgbb = 255;
+                                sw.Write(msgbb);
+                                break;
+                            case "short":
+                                size = 2;
+                                sw.Write(size);
+                                short msgss = 33;
+                                sw.Write(msgss);
+                                break;
+                            default:
+                                Console.WriteLine("eureueruer error de escritura");
+                                repet = false;
+                                break;
+                        }
+                    } while (repet == true);
+ 
+                    
 
                     sw.Flush();
                     Console.WriteLine("Daniel: " + escritura2);
