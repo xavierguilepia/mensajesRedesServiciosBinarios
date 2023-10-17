@@ -20,9 +20,9 @@ namespace GitClient
 
             NetworkStream stream = client2.GetStream();
 
-            StreamReader sr = new StreamReader(stream);
+            BinaryReader sr = new BinaryReader(stream);
 
-            StreamWriter sw = new StreamWriter(stream);
+            BinaryWriter sw = new BinaryWriter(stream);
 
             bool end = false;
 
@@ -32,13 +32,48 @@ namespace GitClient
                 try
                 {
 
-                    string Escrit = sr.ReadLine();
-                    Console.WriteLine("Dani: " + Escrit);
+                    byte Escrit = sr.ReadByte();
+                    if (Escrit == 4)
+                    {
+                        int msg = sr.ReadInt32();
+                        Console.WriteLine("Dani envia un int: " + msg);
+                    }
+                    if (Escrit == 1)
+                    {
+                        byte msg = sr.ReadByte();
+                        Console.WriteLine("Dani envia un byte: " + msg);
+                    }
+                    if (Escrit == 2)
+                    {
+                        short msg = sr.ReadInt16();
+                        Console.WriteLine("Dani envia un short: " + msg);
+                    }
 
                     string Escrit2 = Console.ReadLine();
-                    sw.WriteLine(Escrit2);
+
+                    if (Escrit2 == "int")
+                    {
+                        byte size = 4;
+                        sw.Write(size);
+                        int msg = 69;
+                        sw.Write(msg);
+                    }
+                    if (Escrit2 == "byte")
+                    {
+                        byte size = 1;
+                        sw.Write(size);
+                        byte msg = 255;
+                        sw.Write(msg);
+                    }
+                    if (Escrit2 == "short")
+                    {
+                        byte size = 2;
+                        sw.Write(size);
+                        short msg = 33;
+                        sw.Write(msg);
+                    }
+
                     sw.Flush();
-                    Console.WriteLine("Xavi: " + Escrit2);
 
                 }
                 catch (Exception e)
