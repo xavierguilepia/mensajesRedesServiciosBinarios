@@ -14,8 +14,8 @@ namespace ConsoleApp1
             TcpClient client1 = listener.AcceptTcpClient();
             NetworkStream ns1 = client1.GetStream();
 
-            StreamReader sr = new StreamReader(ns1);
-            StreamWriter sw = new StreamWriter(ns1);
+            BinaryReader sr = new BinaryReader(ns1);
+            BinaryWriter sw = new BinaryWriter(ns1);
 
             bool end = false;
  
@@ -24,13 +24,53 @@ namespace ConsoleApp1
                 try
                 {
                     string escritura2 = Console.ReadLine();
-                    sw.WriteLine(escritura2);
+                    switch (escritura2)
+                    {
+                        case "int":
+                            byte size = 4;
+                            sw.Write(size);
+                            int msg = 2147483647;
+                            sw.Write(msg);
+                            break;
+
+                        case "byte":
+                            size = 1;
+                            sw.Write(size);
+                            byte msgbb = 255;
+                            sw.Write(msgbb);
+                            break;
+                        case "short":
+                            size = 2;
+                            sw.Write(size);
+                            short msgss = 33;
+                            sw.Write(msgss);
+                            break;
+                        default:
+                            Console.WriteLine("eureueruer error de escritura");
+                            break;
+                    }
+
                     sw.Flush();
                     Console.WriteLine("Daniel: " + escritura2);
 
+                    byte pe = sr.ReadByte();
+                    if (pe == 1)
+                    {
+                        byte msgb = sr.ReadByte();
+                        Console.WriteLine("Xavi byte: " + msgb);
 
-                    string escritura = sr.ReadLine();
-                    Console.WriteLine("Xavi: " + escritura);
+                    }
+                    if (pe == 2)
+                    {
+                        short msgs = sr.ReadInt16();
+                        Console.WriteLine("Xavi byte: " + msgs);
+
+                    }
+                    if (pe == 4)
+                    {
+                        int msgi = sr.ReadInt32();
+                        Console.WriteLine("Xavi int: " + msgi);
+                    }
                 }
                 catch(Exception e)
                 {

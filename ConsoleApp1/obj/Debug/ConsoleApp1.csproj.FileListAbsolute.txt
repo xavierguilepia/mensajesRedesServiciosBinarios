@@ -5,3 +5,10 @@ D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\ConsoleApp1\obj\Debug\
 D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
 D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
