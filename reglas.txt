@@ -1,0 +1,2 @@
+8 Bits para el tamaño
+De 0 a 255 Bytes de datos, a ser itnerpretados como caracteres
