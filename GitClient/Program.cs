@@ -26,6 +26,8 @@ namespace GitClient
 
             bool end = false;
 
+            bool repeat = false;
+
             while (end == false)
             {
 
@@ -51,30 +53,35 @@ namespace GitClient
 
                     string Escrit2 = Console.ReadLine();
 
-                    switch (Escrit2)
+                    do
                     {
-                        default:
-                            Console.WriteLine();
-                            break;
-                        case "int":
-                            byte sizei = 4;
-                            sw.Write(sizei);
-                            int msgi = 69;
-                            sw.Write(msgi);
-                            break;
-                        case "byte":
-                            byte sizeb = 1;
-                            sw.Write(sizeb);
-                            byte msgb = 255;
-                            sw.Write(msgb);
-                            break;
-                        case "short":
-                            byte sizes = 2;
-                            sw.Write(sizes);
-                            short msgs = 33;
-                            sw.Write(msgs);
-                            break;
-                    }
+                        repeat = true;
+                        switch (Escrit2)
+                        {
+                            default:
+                                Console.WriteLine();
+                                repeat = false;
+                                break;
+                            case "int":
+                                byte sizei = 4;
+                                sw.Write(sizei);
+                                int msgi = 69;
+                                sw.Write(msgi);
+                                break;
+                            case "byte":
+                                byte sizeb = 1;
+                                sw.Write(sizeb);
+                                byte msgb = 255;
+                                sw.Write(msgb);
+                                break;
+                            case "short":
+                                byte sizes = 2;
+                                sw.Write(sizes);
+                                short msgs = 33;
+                                sw.Write(msgs);
+                                break;
+                        }
+                    } while (repeat==true);
 
                     sw.Flush();
 
