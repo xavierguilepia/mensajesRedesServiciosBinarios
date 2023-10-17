@@ -24,27 +24,30 @@ namespace ConsoleApp1
                 try
                 {
                     string escritura2 = Console.ReadLine();
+                    switch (escritura2)
+                    {
+                        case "int":
+                            byte size = 4;
+                            sw.Write(size);
+                            int msg = 2147483647;
+                            sw.Write(msg);
+                            break;
 
-                    if (escritura2 == "int")
-                    {
-                        byte size = 4;
-                        sw.Write(size);
-                        int msg = 2147483647;
-                        sw.Write(msg);
-                    }
-                    if (escritura2 == "byte")
-                    {
-                        byte size = 1;
-                        sw.Write(size);
-                        byte msg = 255;
-                        sw.Write(msg);
-                    }
-                    if (escritura2 == "short")
-                    {
-                        byte size = 2;
-                        sw.Write(size);
-                        short msg = 33;
-                        sw.Write(msg);
+                        case "byte":
+                            size = 1;
+                            sw.Write(size);
+                            byte msgbb = 255;
+                            sw.Write(msgbb);
+                            break;
+                        case "short":
+                            size = 2;
+                            sw.Write(size);
+                            short msgss = 33;
+                            sw.Write(msgss);
+                            break;
+                        default:
+                            Console.WriteLine("eureueruer error de escritura");
+                            break;
                     }
 
                     sw.Flush();

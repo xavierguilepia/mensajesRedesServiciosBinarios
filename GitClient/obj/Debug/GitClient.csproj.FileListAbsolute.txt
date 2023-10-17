@@ -11,3 +11,10 @@ D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\GitClient\bin\Debug\Gi
 D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\GitClient\obj\Debug\GitClient.csproj.CoreCompileInputs.cache
 D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\GitClient\obj\Debug\GitClient.exe
 D:\dani\M19-XarxesServeis\23-10-10\mensajesRedesServicios\GitClient\obj\Debug\GitClient.pdb
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\GitClient\bin\Debug\GitClient.exe.config
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\GitClient\bin\Debug\GitClient.exe
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\GitClient\bin\Debug\GitClient.pdb
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\GitClient\obj\Debug\GitClient.csproj.AssemblyReference.cache
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\GitClient\obj\Debug\GitClient.csproj.CoreCompileInputs.cache
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\GitClient\obj\Debug\GitClient.exe
+D:\dani\M19-XarxesServeis\23-10-17\mensajesRedesServicios\mensajesRedesServiciosBinarios\GitClient\obj\Debug\GitClient.pdb
