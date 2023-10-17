@@ -20,9 +20,9 @@ namespace GitClient
 
             NetworkStream stream = client2.GetStream();
 
-            StreamReader sr = new StreamReader(stream);
+            BinaryReader sr = new BinaryReader(stream);
 
-            StreamWriter sw = new StreamWriter(stream);
+            BinaryWriter sw = new BinaryWriter(stream);
 
             bool end = false;
 
