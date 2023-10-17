@@ -51,16 +51,15 @@ namespace GitClient
                             break;
                     }
 
-                    string Escrit2 = Console.ReadLine();
-
                     do
                     {
-                        repeat = true;
+                        string Escrit2 = Console.ReadLine();
+                        repeat = false;
                         switch (Escrit2)
                         {
                             default:
-                                Console.WriteLine();
-                                repeat = false;
+                                Console.WriteLine("ppp");
+                                repeat = true;
                                 break;
                             case "int":
                                 byte sizei = 4;
@@ -81,6 +80,7 @@ namespace GitClient
                                 sw.Write(msgs);
                                 break;
                         }
+                        sw.Flush();
                     } while (repeat==true);
 
                     sw.Flush();

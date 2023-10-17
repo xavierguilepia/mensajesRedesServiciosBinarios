@@ -21,12 +21,13 @@ namespace ConsoleApp1
  
             while (end == false)
             {
+                string escritura2;
                 try
                 {
                     do
                     {
                         repet = false;
-                        string escritura2 = Console.ReadLine();
+                        escritura2 = Console.ReadLine();
                         switch (escritura2)
                         {
                             case "int":
@@ -35,27 +36,25 @@ namespace ConsoleApp1
                                 int msg = 2147483647;
                                 sw.Write(msg);
                                 break;
-
                             case "byte":
-                                size = 1;
-                                sw.Write(size);
+                                byte sizeb = 1;
+                                sw.Write(sizeb);
                                 byte msgbb = 255;
                                 sw.Write(msgbb);
                                 break;
                             case "short":
-                                size = 2;
-                                sw.Write(size);
+                                byte sizec = 2;
+                                sw.Write(sizec);
                                 short msgss = 33;
                                 sw.Write(msgss);
                                 break;
                             default:
                                 Console.WriteLine("eureueruer error de escritura");
-                                repet = false;
+                                repet = true;
                                 break;
                         }
+                        sw.Flush();
                     } while (repet == true);
- 
-                    
 
                     sw.Flush();
                     Console.WriteLine("Daniel: " + escritura2);
